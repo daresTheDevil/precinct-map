@@ -3,11 +3,7 @@
     <v-row>
       <v-col cols="12" class="py-0">
         <no-ssr>
-          <l-map
-            :zoom="13"
-            :center="[55.9464418, 8.1277591]"
-            :options="leafletMapOptions"
-          >
+          <l-map :zoom="7.5" :center="center" :options="leafletMapOptions">
             <l-tile-layer
               url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"
             ></l-tile-layer>
@@ -34,7 +30,8 @@ export default {
     show: true,
     enableTooltip: true,
     zoom: 6,
-    center: [48, -1.219482],
+
+    center: [32.612855, -89.902802],
     geojson: null,
     fillColor: '#e4ce7f',
     url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
